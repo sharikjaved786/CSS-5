@@ -1,0 +1,490 @@
+#heading{
+  text-align: center;
+}
+
+#order-list{
+  margin-left: 30%;
+}
+
+.parent{
+  display: flex;
+}
+
+.first{
+  width: 15%;
+  height: 88px;
+  background-color: rgb(90, 32, 124);
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  transform: skew(15deg);
+  
+  animation: first;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.second{
+  width: 15%;
+  height: 80px;
+  background-color: rgba(52, 20, 78, 0.185);
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  transform: rotate(15deg);
+  
+  animation: second;
+  animation-direction: alternate-reverse;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.third{
+  width: 15%;
+  height: 80px;
+  background-color: rgb(90, 32, 124);
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  transform: rotate(0);
+  
+  animation: third;
+  animation-direction:normal;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.fourth{
+  width: 15%;
+  height: 80px;
+  background-color: rgba(52, 20, 78, 0.185);
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 6%;
+}
+
+#fourth-1{
+  transform: rotateX(40deg);
+  
+  animation: fourth-1;
+  animation-direction:normal;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#fourth-2{
+  transform: rotateY(50deg);
+  
+  animation: fourth-2;
+  animation-direction:normal;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#fourth-3{
+  transform: rotate(30deg);
+  
+  animation: fourth-3;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes first {
+  from{
+    transform: skew(15deg);
+  }
+
+  to{
+    transform: skew(-15deg);
+  }
+}
+
+@keyframes second {
+  from {
+    transform: rotate(15deg);
+  }
+
+  to {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes third {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fourth-1 {
+  from{
+    transform: rotateX(40deg);
+  }
+
+  to{
+    transform: rotateX(-40deg);
+  }
+}
+
+
+@keyframes fourth-2 {
+  from{
+    transform: rotateY(50deg);
+  }
+
+  to{
+    transform: rotateY(-50deg);
+  }
+}
+
+@keyframes fourth-3 {
+  from{
+    transform: rotate(30deg);
+  }
+
+  to{
+    transform: rotate(-65deg);
+  }
+}
+
+#anchor{
+  text-align: center;
+}
+
+.anchor{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+/* page-2 */
+
+#parent-page-2{
+ 
+}
+
+
+#orderlist-page-2{
+  margin-left: 40%;
+}
+
+.child-div-page-2-odd{
+  width: 15%;
+  height: 88px;
+  background-color: rgb(109, 16, 133);
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.child-div-page-2-even{
+  width: 15%;
+  height: 80px;
+  background-color: rgba(52, 20, 78, 0.185);
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+#play-1{
+  transition: transform 1s;
+  -webkit-transform-origin-x: 0%;
+  
+ }
+
+#play-1:hover{
+  transform: scaleX(3);
+  transition-timing-function: ease;
+  -webkit-transform-origin-x: 0%;
+  }
+
+   #play-2{
+    transition: transform 1s;
+   -webkit-transform-origin-x: 0%;
+    -webkit-transform-origin-y: 0%;
+  }
+
+  #play-2:hover{
+    transform: scale(2,2);
+    transition-timing-function: ease-in;
+     -webkit-transform-origin-y: 0%; 
+  } 
+
+  #play-3{
+    transition: transform 1s;
+    -webkit-transform-origin-x: 0%;
+   }
+  
+  #play-3:hover{
+    transform: scaleX(3);
+    transition-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transform-origin-x: 0%;
+  }
+
+  #play-4{
+    transition: transform 1s;
+    -webkit-transform-origin-x: 0%;
+    }
+    
+  #play-4:hover{
+    transform: scaleX(3);
+    transition-timing-function:step-start;
+    -webkit-transform-origin-x: 0%;
+  }
+
+    #play-5{
+      transition: transform 1s;
+      -webkit-transform-origin-x: 0%;
+    }
+      
+    #play-5:hover{
+     transform: scaleX(3);
+     transition-timing-function: linear;
+     -webkit-transform-origin-x: 0%;
+    }
+
+    #play-6{
+      transition: transform 1s;
+      -webkit-transform-origin-x: 0%;
+    }
+        
+    #play-6:hover{
+      transform: scaleX(3);
+      transition-timing-function:ease-out;
+      -webkit-transform-origin-x: 0%;
+    }
+
+    #play-7{
+      transition: transform 1s;
+      -webkit-transform-origin-x: 0%;
+    }
+          
+    #play-7:hover{
+       transform: scaleX(3);
+       transition-timing-function: ease-in-out;
+       -webkit-transform-origin-x: 0%;
+    }
+
+    .anchor-page-2{
+      font-weight: bold;
+      font-size: large;
+      text-decoration: none;
+      color: black;
+      margin-left: 47%;
+      display: block;
+      margin-top: 4px;
+    }
+
+
+
+
+
+
+    /* page-3 */
+
+    #div-heading-page-3{
+      position: absolute;
+     
+    }
+
+    #align{
+      position: relative;
+      margin: 0px;
+      z-index: 2;
+      left: 130%;  
+
+    }
+
+      #image-cloud{
+      background-image: url(./images/cloud.JPG); 
+      background-repeat: no-repeat;
+       /* background-size: 100%;  */
+      
+      height: 600px;
+      width: 1000%;  
+      position: relative;
+      top: -42px;
+      z-index: 1; 
+
+      animation: cloud;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+
+    }  
+
+    #image-building{
+      background-image: url(./images/building.png);
+      position: relative;
+      top: 200px;
+      width: 1000%;
+      height: 400px;
+      top: -470px;
+      z-index: 2;
+
+      transform: translateX(0px);
+
+      animation: building;
+      animation-direction: normal; 
+      animation-duration: 25s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+    }
+
+    #image-road{
+      background-image: url(./images/Road.JPG);
+      position: relative;
+      top: 200px;
+      width: 1000%;
+      height: 300px;
+      top: -645px;
+      z-index: 3;
+
+      transform: translateX(0px);
+      animation: road;
+      animation-direction: normal; 
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+    }
+
+    #image-car{
+      background-image: url(./images/car.png);
+      background-repeat: no-repeat;
+      background-size: 35%;
+      width: 300%;
+      height: 300px;
+
+      position: relative;
+      top: -900px;
+      left: 10%;
+      z-index: 3;
+      
+    }
+
+    #image-wheel-1{
+      display: block;
+      width: 5.5%;
+      height: auto;
+      position: relative;
+      top: 519.8px;
+      left: 66.47px;
+      z-index: 3;
+
+      animation-name: wheel;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+    }
+
+    #image-wheel-2{
+    display: block;
+    width: 5.5%;
+    height: auto;
+    position: relative;
+    top: 449px;
+    left: 295px;
+    z-index: 3;
+
+    animation-name: wheel;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+
+    #image-flag{
+    background-image: url(./images/flag.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    width: 197%;
+    height: 200px;
+    position: relative;
+    top: -1206.5px;
+    left: 92.5%;
+    z-index: 3
+  }
+
+  #image-sun{
+    background-image: url(./images/sun.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    width: 359%;
+    height: 140px;
+    position: relative;
+    top: -1800.5px;
+    left: 290.5%;
+    z-index: 3;
+    animation-name: sun;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+
+  /* transition/animation */
+
+ @keyframes road{
+  from{
+    transform: translateX(0px);
+  }
+
+  to{
+    transform: translateX(-2200px);
+  }
+} 
+ 
+
+/* city */
+@keyframes building{
+  from{
+    transform: translateX(0px);
+  }
+
+  to{
+    transform: translateX(-3300px);
+  }
+} 
+
+
+/* wheels */
+
+@keyframes wheel{
+  from{
+  
+    transform:  rotate(0deg);
+  }
+
+  to{
+    
+    transform:  rotate(360deg);
+  }
+}
+
+/* sun */
+
+@keyframes sun{
+  from{
+  
+    transform:  translateX(0px);
+  }
+
+  to{
+    
+    transform:  translateX(100px);
+  }
+}
+
+
